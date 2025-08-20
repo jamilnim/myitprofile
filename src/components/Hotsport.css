@@ -1,0 +1,64 @@
+.hotsport-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+
+.hotsportpic img {
+  width: 40vw;
+  height: 50rem;
+
+  object-fit: cover;
+}
+
+.hotspaceLogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.hotspaceLogoimg {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 1.5s ease-in-out, box-shadow 0.5s ease;
+  }
+  
+  .hotspaceLogoimg:hover {
+    transform: rotate(80deg) scale(1.05);
+    box-shadow: 0 0 25px 6px rgba(255, 255, 255, 0.8);
+  }
+  
+
+.heading {
+  font-size: 2rem;
+  color: white;
+  width: 50vw;
+  text-align: right;
+  line-height: 1.1; /* 👈 Lower value = tighter spacing */
+  margin-right: 4rem;
+}
+
+.hotsporttext {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotBtn {
+  width: 14rem;
+  margin: 1rem;
+  background-color: goldenrod;
+}
+
+.Btncontainer {
+  display: flex;
+  justify-content: center;
+}

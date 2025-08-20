@@ -1,0 +1,167 @@
+.job-timeline {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0rem 0rem;
+}
+
+.timeline-heading {
+  position: relative;
+  text-align: center;
+  background-image: url(../assets/background/headerbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+color: rgb(255, 255, 255);
+font-size: large;
+height: 8rem;
+margin-top: 0;
+}
+
+.timeline-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    /* Dark at top */ rgba(255, 255, 255, 0.3) 80%,
+    /* Light/foggy in middle */ rgb(0, 0, 0.03) 80% /* Dark at bottom */
+  );
+  backdrop-filter: blur(20px);
+  z-index: 0;
+  
+}
+
+.timeline-wrapper {
+  display: flex;
+  height: 70vh;
+  gap: 2rem;
+}
+
+.timeline-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  color: #888;
+  font-size: 1.5rem;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Outer white gradient glow */
+.image-placeholder::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: radial-gradient(rgba(255, 255, 255, 0.7), rgba(245, 243, 243, 0));
+  border-radius: 20px;
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.jobprofileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  max-width: 80%;
+  width: 60%;
+  height: 60%;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.job-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.company {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.2rem;
+}
+
+.job-highlights {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.job-highlights li {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-controls {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.timeline-controls button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-controls button:hover {
+  background-color: #444;
+}
+
+.knowmoreBtn{
+    left: 100%;
+    width: 1rem;
+}

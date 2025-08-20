@@ -1,0 +1,48 @@
+.strength-section {
+    background-color: #000000;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .strength-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .strength-title span {
+ 
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .chart-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .strength-card {
+    background: #000000;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 6px 16px white;
+    width: 30%;
+    min-width: 280px;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .strength-card.bar {
+    padding: 1rem;
+  }
+  
+  .strength-card.line {
+    padding: 1rem;
+  }
+  

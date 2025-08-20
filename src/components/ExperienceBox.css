@@ -1,0 +1,75 @@
+.exp-section {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-image: url(../assets/background/headerbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Foggy white overlay */
+.exp-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 0%,
+    /* Dark at top */ rgba(255, 255, 255, 0.3) 80%,
+    /* Light/foggy in middle */ rgb(0, 0, 0.03) 100% /* Dark at bottom */
+  );
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+/* Raise content above overlay */
+.exp-title,
+.exp-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.exp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #faf8f8;
+}
+
+.exp-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f1f2f5;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.exp-box {
+  flex: 1 1 150px;
+  min-width: 120px;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.exp-box:last-child {
+  border-right: none;
+}
+
+.exp-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.exp-label {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
