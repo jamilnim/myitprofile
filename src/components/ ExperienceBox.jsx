@@ -8,7 +8,6 @@ function ExperienceBox() {
     { value: "H&M", label: "Nordic Company" },
     { value: "Multi", label: "Cultural Teams" },
     { value: "IT", label: "Strong Tech Base" },
-    { value: "Sustainable", label: "Product Sourcing" }
   ];
 
   return (

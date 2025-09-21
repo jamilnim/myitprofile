@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../assets/background/headerbackground.jpg);
+  background-image: url(../assets/background/heading.jpg);
   background-size: cover;
   background-position: center;
   color: #ccc;
@@ -11,7 +11,9 @@
   position: relative;
   overflow: hidden; /* ensures blur doesn't overflow */
   z-index: 1;
-  height: 8rem;
+  height: 15rem;
+  width: 100vw;
+  padding: 2rem;
 }
 
 .footer::before {
@@ -20,12 +22,14 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 60%
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 1) 50%
   );
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   z-index: -1;
-  height: 10rem;
+  height: 15rem;
+  width: 100vw;
+  padding: 2rem;
 }
 
 .footer-left {

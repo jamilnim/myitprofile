@@ -1,0 +1,133 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  margin: auto;
+}
+
+.recommendationCard {
+  position: relative;
+  background: #ffffff; /* Black inside */
+  color: #0f0f0f; /* White text */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(128, 128, 128, 0.5);
+  width: 80%;
+  height: 15rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* hide overflow of animation */
+  z-index: 1;
+}
+
+.recommendationCard::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* stretch full size */
+  padding: 3px; /* border thickness */
+  border-radius: 16px;
+  background: linear-gradient(60deg, transparent, blue, transparent, transparent, blue, transparent);
+  width: 110%;
+  height: 18rem;
+  animation: rotation_481 9000ms infinite linear;
+  mask-composite: exclude; /* show only the border */
+  z-index: -1;
+}
+
+.recommendationCard::after {
+    content: "";
+    position: absolute;
+    background: #ffffff; /* Black inside */
+    padding: 2rem;
+    border-radius: 16px;
+    width: 94%;
+    height: 14.5rem;
+    z-index: 0,
+  }
+@keyframes moveBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.recmendData{
+    position: relative;
+    content: "";
+    z-index: 2;
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #fff;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card .email {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #339cff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.card .text {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.nav-btn {
+
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 6rem;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2) translateY(-50%);
+}
+
+.nav-btn.left {
+  left: 5rem;
+  background: #339cff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+ 
+}
+
+.nav-btn.right {
+  right: -1rem;
+  background: #339cff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+ 
+
+} 

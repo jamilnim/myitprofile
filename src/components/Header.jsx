@@ -6,12 +6,12 @@ function Header() {
   return (
     <header className="main-header">
         <div className='logocontainer'><img className='mainlogo' src={logo} alt="logo" />
-        <p>Efficency|Sustainiblity|transperacy</p></div>
+        <p>You coder here</p></div>
       <nav className="nav-bar">
         <ul className="nav-links">
           <li><a href="/home">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/project">Project</a></li>
           <li><a href="/auth">Blogs</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Document</a></li>
